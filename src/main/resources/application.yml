@@ -24,6 +24,10 @@ spring:
         enabled: true
       cluster-nodes: 127.0.0.1:9300 #es的ip和端口
       cluster-name: elasticsearch #es集群名称
+    mongodb:
+      host: localhost #mongodb地址
+      port: 27017 #端口
+      database: mall-port #mongodb连接的数据库
 
 mybatis:
   mapper-locations:
