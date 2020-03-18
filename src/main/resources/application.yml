@@ -28,6 +28,13 @@ spring:
       host: localhost #mongodb地址
       port: 27017 #端口
       database: mall-port #mongodb连接的数据库
+  rabbitmq:
+    host: localhost #rabbitmq地址
+    port: 5672 #端口
+    username: mall #用户名
+    password: mall #密码
+    virtual-host: /mall #rabbitmq的虚拟host
+    publisher-confirms: true #如果对异步消息需要回调，需要设置为true
 
 mybatis:
   mapper-locations:
